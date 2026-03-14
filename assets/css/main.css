@@ -4687,3 +4687,177 @@ input, select, textarea {
 		}
 
 	}
+
+
+	/* New About Me Section */
+
+	.about-hero {
+  padding: 5rem 0 3rem 0;
+}
+
+.about-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.about-hero-inner .eyebrow {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+.about-hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+}
+
+.about-intro {
+  max-width: 760px;
+  margin: 0 auto 1.75rem auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.about-tags span {
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.55);
+}
+
+.about-section {
+  padding: 3rem 0;
+}
+
+.section-header {
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.section-header h2 {
+  margin-bottom: 0;
+}
+
+.about-text-card {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 2rem 2.25rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.6);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.about-text-card p:last-child {
+  margin-bottom: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  padding: 1.75rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.65);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.skill-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.skill-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.skill-card li {
+  margin-bottom: 0.65rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-card {
+  display: block;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.65);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+}
+
+.contact-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.65;
+  margin-bottom: 0.45rem;
+}
+
+.contact-value {
+  display: block;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 980px) {
+  .skills-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text-card {
+    padding: 1.5rem;
+  }
+}
+
+.profile-photo {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 16px;
+  display: block;
+  margin: 2rem auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
